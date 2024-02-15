@@ -2,7 +2,8 @@ class HomeController < ApplicationController
     before_action :validate_user
     def home
     end
-
+   
+    # Initializing the eventA
     def create_event_a
         event = Iterable::Events.new
         flash[:notice] = 'EventA has been initilaized'
@@ -12,6 +13,7 @@ class HomeController < ApplicationController
         redirect_to root_path
     end
 
+    # Initializing the EventB and Sending Email
     def create_event_b
         event = Iterable::Events.new
         event.for_email(current_user.email)
