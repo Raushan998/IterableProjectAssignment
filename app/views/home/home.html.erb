@@ -1,0 +1,13 @@
+<div style="margin-top: 30vh; margin-left: 40vh;">
+    <div class="row">
+        <div class="col">
+            <%= button_to 'Create EventA', home_create_event_a_path, class: "btn btn-primary", method: :post, remote: true %>
+        </div>
+        <div class="col">
+            <%= button_to 'Create EventB', home_create_event_b_path, class: "btn btn-primary", method: :post, remote: true %>
+        </div>
+    </div>
+    <div class="row" style="margin-left: 35vh; margin-top: 10vh;">
+        <%= button_to 'Logout', destroy_user_session_path, class: "btn btn-secondary", method: :delete%>
+    </div>
+</div>
