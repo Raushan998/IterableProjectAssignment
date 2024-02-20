@@ -103,6 +103,11 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    factory_bot (6.4.6)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.4.3)
+      factory_bot (~> 6.4)
+      railties (>= 5.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -225,6 +230,8 @@ GEM
       rspec-support (~> 3.12)
     rspec-support (3.13.0)
     ruby2_keywords (0.0.5)
+    shoulda-matchers (5.3.0)
+      activesupport (>= 5.2.0)
     sorbet-runtime (0.5.11249)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
@@ -265,6 +272,7 @@ DEPENDENCIES
   debug
   devise (~> 4.9)
   dotenv-rails
+  factory_bot_rails
   importmap-rails
   iterable-api-client
   jbuilder
@@ -274,6 +282,7 @@ DEPENDENCIES
   rails-controller-testing
   redis (>= 4.0.1)
   rspec-rails
+  shoulda-matchers
   sprockets-rails
   stimulus-rails
   turbo-rails
